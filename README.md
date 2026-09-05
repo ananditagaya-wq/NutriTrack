@@ -1,118 +1,99 @@
-# 🥗 NutriTrack
+# NutriTrack 2.0 🌿
 
-> **Smart Nutrition & Digital Wellness Tracker**
+NutriTrack is a wellness tracking web application that brings **nutrition, hydration and digital eye wellness** into one daily dashboard.
 
-NutriTrack is a modern health and wellness application designed to help users manage their **nutrition, hydration, and digital eye wellness** from a single dashboard.
+This repository is an independent portfolio-oriented implementation inspired by the original NutriTrack prototype.
 
-The project combines nutrition tracking with digital wellness features, with the goal of evolving into an intelligent personal wellness assistant.
+## ✨ Current Features
 
----
-
-## 🚀 Project Vision
-
-Most nutrition applications focus primarily on calories and macros.
-
-NutriTrack takes a broader approach by combining:
-
-- 🍽️ Smart Nutrition Tracking
-- 💧 Hydration Monitoring
-- 👁️ Digital Eye Wellness
-- 📊 Personal Analytics
-- 🎯 Health Goals
-- 🤖 AI-powered meal analysis *(in development)*
-
-Our goal is to create a single platform that helps users build healthier everyday habits.
-
----
-
-## ✨ Features
-
-### 🍽️ Smart Meal Logging
-
-Users can record their meals and track:
-
-- Calories
-- Protein
-- Carbohydrates
-- Fats
+### Smart Nutrition
+- Food search with built-in nutrition data
+- Automatic calorie and macro calculations
+- Natural-language **Smart Log** prototype
+- Manual meal entry as a fallback
 - Meal history
+- Daily calorie and macro targets
 
-Future versions will support intelligent meal recognition and automatic nutritional estimation.
-
-### 🔎 Food Search
-
-Search for foods and quickly add their nutritional information instead of entering every macro manually.
-
-### 🤖 AI Meal Analysis — Coming Soon
-
-The planned AI meal system will allow users to:
-
-- 📸 Upload a picture of their meal
-- 📝 Describe what they ate
-- 🔍 Identify food items
-- 📊 Estimate calories and macronutrients
-- 🍗 Track protein intake
-
-> AI-generated nutritional values are estimates and should not be considered medical advice.
-
-### 💧 Hydration Tracking
-
-NutriTrack allows users to monitor their daily water intake.
-
-Features include:
-
-- Daily hydration goal
-- Quick-add buttons
+### 💧 Hydration
+- 2,000 ml daily goal
+- Quick-add 250 / 500 / 750 ml
 - Hydration progress
-- Water intake history
-- Reminder support
+- Daily hydration history
 
 ### 👁️ Eye Wellness
+- 20-20-20 rule
+- Eye-break tracking
+- Break completion
+- Wellness progress
 
-NutriTrack includes a built-in **20-20-20 eye wellness system**.
+### 📊 Insights
+- 7-day calorie trend
+- Average calorie intake
+- Meal and eye-break statistics
+- Basic data-driven insight
 
-Every 20 minutes of screen use:
+## 🛠️ Tech Stack
 
-> Look at something approximately 20 feet away for 20 seconds.
+- React
+- TypeScript
+- Vite
+- CSS
+- Lucide React
+- LocalStorage
 
-The application provides:
+## 🧠 Smart Log
 
-- Eye-break countdown
-- Break completion tracking
-- Browser notifications
-- Sound alerts
-- Daily eye-break progress
+The current Smart Log is a **local prototype** that demonstrates the product workflow:
 
-### 📊 Personal Insights
+`Natural language → food detection → nutrition lookup → review → save`
 
-Users can visualize their wellness activity through:
+The next version should connect this interface to an LLM/API for robust food and portion extraction.
 
-- Calorie trends
-- Macronutrient breakdown
-- Hydration progress
-- Eye-break consistency
-- Daily and weekly statistics
-## 🖥️ Application Structure
+## 🚀 Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local Vite URL shown in the terminal.
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## 🗂️ Project Structure
 
 ```text
-NutriTrack
-│
-├── 🏠 Home
-│   ├── Today's Meals
-│   ├── Hydration
-│   ├── Eye Wellness
-│   └── Daily Summary
-│
-├── 🍽️ Nutrition
-│   ├── Food Search
-│   ├── Smart Logging
-│   └── Meal History
-│
-├── 👁️ Wellness
-│   ├── Hydration
-│   └── Eye Wellness
-│
-└── 📊 Insights
-    ├── Nutrition Analytics
-    ├── Hydration Analytics
-    └── Wellness Trends
+src/
+├── App.tsx
+├── data.ts
+├── storage.ts
+├── types.ts
+├── main.tsx
+└── styles.css
+```
+
+## 🔮 Roadmap
+
+- [ ] USDA / nutrition database integration
+- [ ] Robust natural-language meal parsing
+- [ ] AI meal photo analysis
+- [ ] Barcode scanning
+- [ ] Personalized AI insights
+- [ ] User authentication
+- [ ] Cloud database
+- [ ] Weekly macro analytics
+- [ ] Goals and streaks
+- [ ] Sleep and activity tracking
+- [ ] PWA/mobile experience
+
+## ⚠️ Nutrition Disclaimer
+
+Nutrition values are estimates and can vary by food brand, preparation method and serving size. NutriTrack is a tracking tool and is not a substitute for professional medical or dietary advice.
+
+## 👨‍💻 Author
+
+Amandeep Singh
